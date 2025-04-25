@@ -11,6 +11,11 @@ module.exports = {
         heading: ["var(--font-playfair)"],
         body: ["var(--font-lora)"],
       },
+      colors: {
+        lightHover: "#fcfeff",
+        darkHover: "#2a004a",
+        darkTheme: "#11001f",
+      },
     },
   },
   plugins: [],
