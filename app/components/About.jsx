@@ -20,11 +20,7 @@ const About = () => {
             Hi, I’m Wanlong Wu, a web developer currently studying Web Design &
             Development at SAIT, graduating in August 2025. I specialize in
             building responsive, modern web applications using technologies like
-            React, Next.js, and relational databases such as PostgreSQL. I’m
-            passionate about creating clean, efficient code and solving
-            real-world problems through scalable, full-stack solutions. Always
-            eager to learn and improve, I’m excited to contribute to innovative
-            development teams.
+            React, Next.js, and relational databases such as PostgreSQL. 
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (
