@@ -20,8 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${playfair.variable} ${lora.variable} font-body`}>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${playfair.variable} ${lora.variable} font-body leading-8 overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>
