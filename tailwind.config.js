@@ -12,9 +12,9 @@ module.exports = {
         body: ["var(--font-lora)"],
       },
       colors: {
-        lightHover: "#fcfeff",
-        darkHover: "#2a004a",
-        darkTheme: "#11001f",
+        lightHover: "#f8f4e6",
+        darkHover: "#475950",
+        darkTheme: "#0d0015",
       },
       boxShadow: {
         black: "4px 4px 0 #000",
@@ -25,5 +25,6 @@ module.exports = {
       },
     },
   },
+  darkMode: "selector",
   plugins: [],
 };
