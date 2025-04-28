@@ -9,9 +9,9 @@ const Services = () => {
       <h2 className="text-center text-5xl">My Services</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-t mb-12">
-        I’m passionate about creating clean, efficient code and solving
+        I&apos;m passionate about creating clean, efficient code and solving
         real-world problems through scalable, full-stack solutions. Always eager
-        to learn and improve, I’m excited to contribute to innovative
+        to learn and improve, I&apos;m excited to contribute to innovative
         development teams.
       </p>
 

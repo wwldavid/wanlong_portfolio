@@ -17,10 +17,11 @@ const About = ({ isDarkMode }) => {
         </div>
         <div className="flex-1">
           <p className="mb-10 max-w-2xl">
-            Hi, I’m Wanlong Wu, a web developer currently studying Web Design &
-            Development at SAIT, graduating in August 2025. I specialize in
-            building responsive, modern web applications using technologies like
-            React, Next.js, and relational databases such as PostgreSQL.
+            Hi, I&apos;m Wanlong Wu, a web developer currently studying Web
+            Design & Development at SAIT, graduating in August 2025. I
+            specialize in building responsive, modern web applications using
+            technologies like React, Next.js, and relational databases such as
+            PostgreSQL.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (
