@@ -37,7 +37,7 @@ const Contact = () => {
       <h2 className="text-center text-5xl">Get in touch</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-t mb-12">
-        Please leave your message here. I'm excited to collaborate with you!
+        Please leave your message here. I am excited to collaborate with you!
       </p>
 
       <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
