@@ -1,17 +1,5 @@
-import { Playfair_Display, Lora } from "next/font/google";
+import { playfair, lora } from "./fonts";
 import "./globals.css";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-playfair",
-});
-
-const lora = Lora({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-lora",
-});
 
 export const metadata = {
   title: "Portfolio - Wanlong",
