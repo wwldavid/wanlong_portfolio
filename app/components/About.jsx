@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets, infoList, toolsData } from "../assets/assets";
 import Image from "next/image";
 
 const About = ({ isDarkMode }) => {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const toggleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
   return (
     <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg">Introduction</h4>
@@ -24,24 +28,55 @@ const About = ({ isDarkMode }) => {
             Next.js, and relational databases such as PostgreSQL.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <li
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
-                key={index}
-              >
-                <Image
-                  src={isDarkMode ? iconDark : icon}
-                  alt={title}
-                  className="w-7 mt-3"
-                />
-                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
-                  {title}
-                </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80">
-                  {description}
-                </p>
-              </li>
-            ))}
+            {infoList.map(({ icon, iconDark, title, description }, index) => {
+              const isExpanded = expandedIndex === index;
+              return (
+                <li
+                  key={index}
+                  className="relative border-[0.5px] border-gray-400 rounded-xl p-6 pb-14 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+                  style={{
+                    height: isExpanded ? "auto" : "210px",
+                    overflow: isExpanded ? "visible" : "hidden",
+                  }}
+                >
+                  <Image
+                    src={isDarkMode ? iconDark : icon}
+                    alt={title}
+                    className="w-7 mt-3"
+                  />
+                  <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
+                    {title}
+                  </h3>
+
+                  {/* 文字区域需要加 max-height 限制 */}
+                  <div className="relative">
+                    <p
+                      className={`text-gray-600 text-sm dark:text-white/80 ${
+                        !isExpanded ? "max-h-[100px] overflow-hidden" : ""
+                      }`}
+                    >
+                      {description}
+                    </p>
+
+                    {/* 遮罩层叠在文字下方 */}
+                    {!isExpanded && (
+                      <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/90 dark:from-gray-900/95 to-transparent pointer-events-none z-10"></div>
+                    )}
+                  </div>
+
+                  {/* 展开按钮保持在最下方 */}
+                  <button
+                    className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm text-blue-500 underline dark:text-blue-400 z-20"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleExpand(index);
+                    }}
+                  >
+                    {isExpanded ? "Show less ▲" : "Show more ▼"}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
 
           <h4 className="my-6 text-gray-700 dark:text-white/80">

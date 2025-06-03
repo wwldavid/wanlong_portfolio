@@ -23,6 +23,9 @@ module.exports = {
       gridTemplateColumns: {
         auto: "repeat(auto-fit, minmax(200px, 1fr))",
       },
+      animation: {
+        spinSlow: "spin 4s linear infinite",
+      },
     },
   },
   darkMode: "selector",
