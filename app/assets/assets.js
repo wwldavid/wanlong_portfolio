@@ -132,13 +132,13 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Develop Tools",
+    title: "Develop Stacks",
     description: "HTML, CSS, Tailwind, JavaScript, React, Next Js",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
-    title: "Academic Background",
+    title: "Education",
     description:
       "I will graduate from the Southern Alberta Institute of Technology on August 31.",
   },
