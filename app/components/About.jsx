@@ -42,13 +42,12 @@ const About = ({ isDarkMode }) => {
                   <Image
                     src={isDarkMode ? iconDark : icon}
                     alt={title}
-                    className="w-7 mt-3"
+                    className="w-7"
                   />
-                  <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
+                  <h3 className="my-2 font-semibold text-gray-700 dark:text-white">
                     {title}
                   </h3>
 
-                  {/* 文字区域需要加 max-height 限制 */}
                   <div className="relative">
                     <p
                       className={`text-gray-600 text-sm dark:text-white/80 ${
@@ -58,13 +57,11 @@ const About = ({ isDarkMode }) => {
                       {description}
                     </p>
 
-                    {/* 遮罩层叠在文字下方 */}
                     {!isExpanded && (
                       <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/90 dark:from-gray-900/95 to-transparent pointer-events-none z-10"></div>
                     )}
                   </div>
 
-                  {/* 展开按钮保持在最下方 */}
                   <button
                     className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm text-blue-500 underline dark:text-blue-400 z-20"
                     onClick={(e) => {

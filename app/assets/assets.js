@@ -32,7 +32,6 @@ import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
-import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
@@ -71,31 +70,34 @@ export const assets = {
   ui_icon,
   graphics_icon,
   right_arrow,
-  send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
-  },
-  {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Mental Health App",
+    description: "Full Stack Front End App",
     bgImage: "/work-2.png",
+    link: "https://mental-health-seven-lake.vercel.app/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Invoice Notebook",
+    description: "Full Stack Frond End App",
+    bgImage: "/work-1.png",
+    link: "https://wanlong-full-stack-invoice.vercel.app/",
+  },
+  {
+    title: "Hamburger Home",
+    description: "React App",
     bgImage: "/work-3.png",
+    link: "https://buy-hamburger-home.vercel.app/",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "Toronto Ministries",
+    description: "Church Web Design",
     bgImage: "/work-4.png",
+    link: "https://your-uiux-design-site.com",
   },
 ];
 

@@ -14,22 +14,22 @@ const Work = ({ isDarkMode }) => {
       </p>
 
       <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
-        {workData.map(({ title, description, bgImage }, index) => (
-          <div
+        {workData.map(({ title, description, bgImage, link }, index) => (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-md relative cursor-pointer group"
             key={index}
             style={{ backgroundImage: `url(${bgImage})` }}
           >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+            <div className="bg-[#cee4ae] w-8/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold">{title}</h2>
                 <p className="text-sm text-gray-700">{description}</p>
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[1px_1px_0_#000] group-hover:bg-teal-300 transition">
-                <Image src={assets.send_icon} alt="send icon" className="w-5" />
-              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
       <a
