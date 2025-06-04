@@ -18,7 +18,6 @@ import mail_icon_dark from "./mail_icon_dark.png";
 import profile_img from "./profile-img.png";
 import download_icon from "./download-icon.png";
 import hand_icon from "./hand-icon.png";
-import header_bg_color from "./header-bg-color.png";
 import moon_icon from "./moon_icon.png";
 import sun_icon from "./sun_icon.png";
 import arrow_icon from "./arrow-icon.png";
@@ -27,9 +26,6 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -56,7 +52,6 @@ export const assets = {
   profile_img,
   download_icon,
   hand_icon,
-  header_bg_color,
   moon_icon,
   sun_icon,
   arrow_icon,
@@ -65,9 +60,6 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
   graphics_icon,
   right_arrow,
   right_arrow_bold,
@@ -103,29 +95,23 @@ export const workData = [
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    bgImage: "/images/design1.jpg",
+    title: "Logo Design",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Good design is innovative: the logo structure is made up of `1957`.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    bgImage: "/images/design2.jpg",
+    title: "Logo Design",
+    description: "The whole assembly are composed into “ART”",
+    link: "",
+  },
+  {
+    bgImage: "/images/design3.jpg",
+    title: "Starry night manipulation",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
-  },
-  {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+      "I instinctively like the painting of Van Gogh, here I pay tribute to Van Gogh with my modification. ",
     link: "",
   },
 ];
