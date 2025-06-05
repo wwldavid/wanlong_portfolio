@@ -57,6 +57,10 @@ html {
     --chart-5: 27 87% 67%;
 
     --radius: 0.5rem;
+
+    --resume-bg: 45 67% 90%;
+
+    --resume-text: 0 0% 10%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -106,6 +110,10 @@ html {
     --chart-4: 280 65% 60%;
 
     --chart-5: 340 75% 55%;
+
+    --resume-bg: 0 0% 20%;
+
+    --resume-text: 0 0% 100%;
   }
 }
 
