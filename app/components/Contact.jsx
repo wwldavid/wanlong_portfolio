@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
 
-const Contact = () => {
+const Contact = ({ isDarkMode }) => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -68,9 +68,9 @@ const Contact = () => {
         >
           Send message{" "}
           <Image
-            src={assets.right_arrow_white}
+            src={isDarkMode ? assets.contact_icon_dark : assets.contact_icon}
             alt="arrow icon"
-            className="w-4"
+            className="w-8"
           />
         </button>
         <p className="mt-4">{result}</p>

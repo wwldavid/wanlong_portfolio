@@ -13,7 +13,7 @@ const Designs = () => {
       const images = designData[activeIndex].carouselImages;
       const timer = setInterval(() => {
         setCarouselIndex((prev) => (prev + 1) % images.length);
-      }, 3000);
+      }, 2000);
       return () => clearInterval(timer);
     }
   }, [activeIndex]);
@@ -78,11 +78,11 @@ const Designs = () => {
               alt="carousel"
               width={1000}
               height={600}
-              className="w-full h-[500px] object-contain bg-white"
+              className="w-full h-[500px] object-contain bg-transparent"
             />
             <button
               onClick={closePreview}
-              className="absolute top-2 right-2 bg-black/60 text-white px-3 py-1 rounded hover:bg-black"
+              className="absolute bottom-2 right-2 bg-black/60 text-white px-3 py-1 rounded hover:bg-black"
             >
               ✕ Close
             </button>

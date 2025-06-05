@@ -16,7 +16,12 @@ import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import profile_img from "./profile-img.png";
-import download_icon from "./download-icon.png";
+import open_icon from "./open_icon.png";
+import more_icon from "./more_icon.png";
+import contact_icon from "./contact_icon.png";
+import open_icon_dark from "./open_icon_dark.png";
+import more_icon_dark from "./more_icon_dark.png";
+import contact_icon_dark from "./contact_icon_dark.png";
 import hand_icon from "./hand-icon.png";
 import moon_icon from "./moon_icon.png";
 import sun_icon from "./sun_icon.png";
@@ -32,6 +37,10 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
 export const assets = {
+  contact_icon,
+  contact_icon_dark,
+  more_icon,
+  more_icon_dark,
   user_image,
   code_icon,
   code_icon_dark,
@@ -50,7 +59,8 @@ export const assets = {
   mail_icon,
   mail_icon_dark,
   profile_img,
-  download_icon,
+  open_icon,
+  open_icon_dark,
   hand_icon,
   moon_icon,
   sun_icon,

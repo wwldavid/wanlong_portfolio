@@ -38,11 +38,9 @@ const Work = ({ isDarkMode }) => {
       >
         Show more{" "}
         <Image
-          src={
-            isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
-          }
-          alt="bold arrow icon"
-          className="w-4"
+          src={isDarkMode ? assets.more_icon_dark : assets.more_icon}
+          alt="more icon"
+          className="w-8"
         />
       </a>
     </div>

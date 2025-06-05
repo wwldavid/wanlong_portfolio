@@ -41,9 +41,9 @@ const Header = ({ isDarkMode }) => {
         >
           Contact me{" "}
           <Image
-            src={assets.right_arrow_white}
+            src={isDarkMode ? assets.contact_icon_dark : assets.contact_icon}
             alt="arrow img"
-            className="w-4"
+            className="w-7"
           />
         </a>
         <button
@@ -52,9 +52,9 @@ const Header = ({ isDarkMode }) => {
         >
           {showResume ? "Close resume" : "My resume"}
           <Image
-            src={assets.download_icon}
-            alt="download icon"
-            className="w-4"
+            src={isDarkMode ? assets.open_icon_dark : assets.open_icon}
+            alt="open icon"
+            className="w-7"
           />
         </button>
       </div>
