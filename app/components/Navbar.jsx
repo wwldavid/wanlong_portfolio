@@ -127,7 +127,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </li>
           <li>
             <a href="#work" onClick={closeMenu}>
-              My Work
+              My Works
             </a>
           </li>
           <li>
