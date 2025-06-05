@@ -93,26 +93,36 @@ export const workData = [
   },
 ];
 
-export const serviceData = [
+export const designData = [
   {
     bgImage: "/images/design1.jpg",
     title: "Logo Design",
-    description:
-      "Good design is innovative: the logo structure is made up of `1957`.",
-    link: "",
+    description: "Good design is innovative...",
+    carouselImages: [
+      "/images/logo_design/logo1.jpg",
+      "/images/logo_design/logo2.jpg",
+      "/images/logo_design/logo3.jpg",
+    ],
   },
   {
     bgImage: "/images/design2.jpg",
-    title: "Logo Design",
-    description: "The whole assembly are composed into “ART”",
-    link: "",
+    title: "Branding",
+    description: "Assembly of ART...",
+    carouselImages: [
+      "/images/brand_design/brand1.jpg",
+      "/images/brand_design/brand2.jpg",
+      "/images/brand_design/brand3.jpg",
+    ],
   },
   {
     bgImage: "/images/design3.jpg",
-    title: "Starry night manipulation",
-    description:
-      "I instinctively like the painting of Van Gogh, here I pay tribute to Van Gogh with my modification. ",
-    link: "",
+    title: "Starry Night Manipulation",
+    description: "Tribute to Van Gogh...",
+    carouselImages: [
+      "/images/star_design/star1.jpg",
+      "/images/star_design/star2.jpg",
+      "/images/star_design/star3.jpg",
+    ],
   },
 ];
 
