@@ -64,13 +64,13 @@ const Contact = ({ isDarkMode }) => {
 
         <button
           type="submit"
-          className="py-3 px-6 w-max flex items-center justify-between gap-2 bg-black/70 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
+          className="py-1 px-4 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-300 dark:bg-white/10 dark:text-white dark:border dark:border-white/30  dark:hover:bg-white/20"
         >
           Send message{" "}
           <Image
             src={isDarkMode ? assets.contact_icon_dark : assets.contact_icon}
-            alt="arrow icon"
-            className="w-8"
+            alt="contact icon"
+            className="w-6 h-6 brightness-200 dark:brightness-100"
           />
         </button>
         <p className="mt-4">{result}</p>
