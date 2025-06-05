@@ -122,6 +122,9 @@ export const designData = [
       "/images/brand_design/brand1.jpg",
       "/images/brand_design/brand2.jpg",
       "/images/brand_design/brand3.jpg",
+      "/images/brand_design/brand4.jpg",
+      "/images/brand_design/brand5.jpg",
+      "/images/brand_design/brand6.jpg",
     ],
   },
   {
