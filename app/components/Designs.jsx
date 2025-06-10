@@ -30,7 +30,7 @@ const Designs = () => {
 
   return (
     <div id="designs" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h2 className="text-center text-5xl">My Design Works</h2>
+      <h2 className="text-center text-5xl text-[#84b9cb]">My Design Works</h2>
       <h4 className="text-center mt-2 text-lg">( At SAIT )</h4>
 
       <p className="text-center max-w-2xl mx-auto mt-4 mb-12">

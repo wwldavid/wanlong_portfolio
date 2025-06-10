@@ -30,12 +30,14 @@ const Contact = ({ isDarkMode }) => {
 
   return (
     <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg">Contact me</h4>
-      <h2 className="text-center text-5xl">Get in touch</h2>
+      {/* <h4 className="text-center mb-2 text-lg">Contact me</h4> */}
+      <h4 className="text-center text-5xl text-[#84b9cb]">
+        Please Leave Your Message Here
+      </h4>
 
-      <p className="text-center max-w-2xl mx-auto mt-t mb-12">
+      {/* <p className="text-center max-w-2xl mx-auto mt-t mb-12">
         Please leave your message here. I am excited to collaborate with you!
-      </p>
+      </p> */}
 
       <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">

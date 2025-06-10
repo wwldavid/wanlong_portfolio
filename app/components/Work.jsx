@@ -5,12 +5,13 @@ import Image from "next/image";
 const Work = ({ isDarkMode }) => {
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg">My portfolio</h4>
-      <h2 className="text-center text-5xl">My latest work</h2>
+      <h2 className="text-center text-5xl text-[#84b9cb]">My latest work</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-t mb-12">
-        Welcom to my web development portfolio! Explore a collection of projects
-        showcasing my expertise in front end development.
+        Welcome to my web development collections! Here includes a mental health
+        app which is capstone project and a Toronto church website for my Studio
+        class for the last semester at SAIT. I will finish these two project by
+        the middle of August.
       </p>
 
       <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">

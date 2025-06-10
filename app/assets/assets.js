@@ -1,4 +1,4 @@
-import user_image from "./user-image.png";
+import user_image from "./user-image.jpg";
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
@@ -22,7 +22,7 @@ import contact_icon from "./contact_icon.png";
 import open_icon_dark from "./open_icon_dark.png";
 import more_icon_dark from "./more_icon_dark.png";
 import contact_icon_dark from "./contact_icon_dark.png";
-import hand_icon from "./hand-icon.png";
+
 import moon_icon from "./moon_icon.png";
 import sun_icon from "./sun_icon.png";
 import arrow_icon from "./arrow-icon.png";
@@ -31,7 +31,7 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import graphics_icon from "./graphics-icon.png";
+
 import right_arrow from "./right-arrow.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
@@ -61,7 +61,7 @@ export const assets = {
   profile_img,
   open_icon,
   open_icon_dark,
-  hand_icon,
+
   moon_icon,
   sun_icon,
   arrow_icon,
@@ -70,7 +70,7 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  graphics_icon,
+
   right_arrow,
   right_arrow_bold,
   right_arrow_bold_dark,
@@ -135,6 +135,7 @@ export const designData = [
       "/images/star_design/star1.jpg",
       "/images/star_design/star2.jpg",
       "/images/star_design/star3.jpg",
+      "/images/star_design/star4.jpg",
     ],
   },
 ];
