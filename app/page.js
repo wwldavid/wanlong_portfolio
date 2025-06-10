@@ -12,24 +12,27 @@ export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
       setIsDarkMode(true);
-    } else {
+    } else if (storedTheme === "light") {
       setIsDarkMode(false);
+    } else {
+      // follow system preference
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setIsDarkMode(prefersDark);
     }
   }, []);
 
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
+      localStorage.setItem("theme", "light");
     }
   }, [isDarkMode]);
   return (
