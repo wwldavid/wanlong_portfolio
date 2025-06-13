@@ -150,13 +150,13 @@ const Designs = () => {
                 </div>
 
                 {/* 图片展示区域 */}
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <div className="relative overflow-hidden shadow-xl">
                   <Image
                     src={designData[activeIndex].carouselImages[carouselIndex]}
                     alt="carousel preview"
                     width={1200}
                     height={700}
-                    className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-contain transition-all duration-500"
+                    className="w-full h-[400px] md:h-[500px] lg:h-[550px] object-contain transition-all duration-500"
                   />
                 </div>
 

@@ -25,13 +25,6 @@ const About = ({ isDarkMode }) => {
       <div className="relative z-10">
         {/* 标题区域 */}
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#84b9cb]"></div>
-            <span className="text-[#4c6473] dark:text-[#e0ebaf] font-medium tracking-wider uppercase text-sm">
-              About Me
-            </span>
-            <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#84b9cb]"></div>
-          </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#2f5d50] via-[#4c6473] to-[#84b9cb] dark:from-[#84b9cb] dark:via-[#e0ebaf] dark:to-[#f8f4e6] bg-clip-text text-transparent leading-tight">
             Skills & Expertise
           </h2>
