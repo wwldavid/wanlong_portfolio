@@ -10,7 +10,7 @@ const Header = ({ isDarkMode }) => {
   };
 
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* 背景装饰元素 */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-br from-[#f2f2b0]/20 to-[#e0ebaf]/20 rounded-full blur-3xl animate-pulse"></div>
@@ -118,11 +118,7 @@ const Header = ({ isDarkMode }) => {
       </div>
 
       {/* Resume Modal */}
-      {showResume && (
-        <div className="fixed inset-0 z-50">
-          <ResumeModal onClose={toggleResume} />
-        </div>
-      )}
+      {showResume && <ResumeModal onClose={toggleResume} />}
     </div>
   );
 };

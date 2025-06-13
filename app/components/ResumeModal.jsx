@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ResumeModal({ onClose }) {
   return (
-    <div className="relative text-left mt-8 p-6 bg-white text-black dark:bg-[#1e1e1e] dark:text-white rounded-lg shadow-md w-full max-w-2xl mx-auto border dark:border-gray-700 text-sm leading-6">
+    <div className="relative text-left mt-8 p-6 bg-white text-black dark:bg-[#1e1e1e] dark:text-white rounded-lg shadow-md w-full max-w-4xl mx-auto border dark:border-gray-700 text-sm leading-6">
       <p>
         <strong>Wanlong Wu</strong>
         <br />
