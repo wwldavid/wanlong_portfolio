@@ -70,7 +70,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <nav
         className={`w-full fixed top-0 left-0 px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-300 ${
           isScroll
-            ? "bg-gradient-to-r from-[#f8f4e6]/95 via-[#f2f2b0]/95 to-[#e0ebaf]/95 backdrop-blur-xl shadow-lg border-b border-[#4c6473]/10 dark:from-[#2f5d50]/95 dark:via-[#4c6473]/95 dark:to-[#2f5d50]/95 dark:border-[#84b9cb]/20"
+            ? "bg-gradient-to-r from-[#f8f4e6]/95 via-[#f2f2b0]/95 to-[#e0ebaf]/95 backdrop-blur-sm shadow-lg border-b border-[#4c6473]/10 dark:from-[#2f5d50]/95 dark:via-[#4c6473]/95 dark:to-[#2f5d50]/95 dark:border-[#84b9cb]/20"
             : "bg-transparent"
         }`}
       >
@@ -178,30 +178,19 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 <a
                   href={item.href}
                   onClick={closeMenu}
-                  className={`block px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
-                    activeSection === item.href.substring(1)
-                      ? "bg-gradient-to-r from-[#2f5d50] to-[#4c6473] text-white shadow-lg dark:from-[#84b9cb] dark:to-[#4c6473] dark:text-[#f8f4e6]"
-                      : "text-[#4c6473] hover:bg-[#e0ebaf]/50 hover:text-[#2f5d50] dark:text-[#f8f4e6] dark:hover:bg-[#4c6473]/30"
-                  }`}
+                  className="flex items-center gap-3 px-4 py-3  text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
                 >
                   {item.label}
                 </a>
               </li>
             ))}
-            <li className="mt-4 pt-4 border-t border-[#4c6473]/20 dark:border-[#84b9cb]/20">
+            <li className="mt-4 pt-4 border-[#4c6473]/20 dark:border-[#84b9cb]/20">
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
+                className="flex items-center gap-3 px-4 py-3  text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
               >
                 <span className="font-medium">Contact Me</span>
-                <Image
-                  src={
-                    isDarkMode ? assets.contact_icon_dark : assets.contact_icon
-                  }
-                  alt="contact icon"
-                  className="w-5"
-                />
               </a>
             </li>
           </ul>
