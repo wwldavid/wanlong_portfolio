@@ -40,7 +40,7 @@ const Work = ({ isDarkMode }) => {
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-gradient-to-r from-[#f8f4e6]/20 via-[#84b9cb]/10 to-[#f8f4e6]/20 dark:from-[#2f5d50]/20 dark:via-[#4c6473]/10 dark:to-[#2f5d50]/20 rounded-2xl p-8 border border-[#4c6473]/20 dark:border-[#84b9cb]/20 backdrop-blur-sm">
               <p className="text-[#4c6473]/90 dark:text-[#f8f4e6]/90 text-lg leading-relaxed px-8">
-                Welcome to my web development collections! Here you'll find my{" "}
+                Welcome to my web development collections! Here you will find my{" "}
                 <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
                   mental health app
                 </span>{" "}
