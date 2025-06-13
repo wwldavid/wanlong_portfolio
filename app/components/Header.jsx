@@ -49,7 +49,7 @@ const Header = ({ isDarkMode }) => {
 
         {/* 主标题区域 */}
         <div className="mb-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4">
             <span className="bg-gradient-to-r from-[#2f5d50] via-[#4c6473] to-[#84b9cb] dark:from-[#84b9cb] dark:via-[#f2f2b0] dark:to-[#e0ebaf] bg-clip-text text-transparent drop-shadow-lg">
               Frontend Web Developer
             </span>
@@ -57,7 +57,7 @@ const Header = ({ isDarkMode }) => {
             <span className="text-[#4c6473] dark:text-[#f8f4e6] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
               in Alberta
             </span>
-          </h1>
+          </h2>
         </div>
 
         {/* 描述文字 */}
