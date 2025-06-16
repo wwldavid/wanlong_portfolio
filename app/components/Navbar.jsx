@@ -85,10 +85,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
         {/* Desktop Navigation */}
         <ul
-          className={`hidden md:flex items-center gap-2 lg:gap-4 rounded-full px-6 py-3 transition-all duration-300 ${
+          className={`hidden md:flex items-center gap-2 lg:gap-4 px-6 py-3 transition-all duration-300 ${
             isScroll
-              ? "bg-white/20 backdrop-blur-md shadow-lg border border-white/30 dark:bg-[#2f5d50]/30 dark:border-[#84b9cb]/30"
-              : "bg-gradient-to-r from-[#f8f4e6]/80 via-[#f2f2b0]/80 to-[#e0ebaf]/80 backdrop-blur-lg shadow-xl border border-[#4c6473]/20 dark:from-[#2f5d50]/80 dark:via-[#4c6473]/80 dark:to-[#2f5d50]/80 dark:border-[#84b9cb]/30"
+              ? "rounded-none bg-transparent shadow-none border-none"
+              : "rounded-full bg-gradient-to-r from-[#f8f4e6]/80 via-[#f2f2b0]/80 to-[#e0ebaf]/80 backdrop-blur-lg shadow-xl border border-[#4c6473]/20 dark:from-[#2f5d50]/80 dark:via-[#4c6473]/80 dark:to-[#2f5d50]/80 dark:border-[#84b9cb]/30"
           }`}
         >
           {navItems.map((item, index) => (
@@ -96,8 +96,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               <a
                 href={item.href}
                 className={`relative px-4 py-2 rounded-full font-medium transition-all duration-300 group ${
-                  activeSection === item.href.substring(1)
-                    ? "text-[#2f5d50] dark:text-[#f8f4e6] dark:from-[#84b9cb]/30 dark:to-[#4c6473]/30"
+                  isScroll
+                    ? activeSection === item.href.substring(1)
+                      ? "text-[#2f5d50] bg-white/30 backdrop-blur-md shadow-md border border-white/30 dark:text-[#f8f4e6] dark:bg-[#2f5d50]/80 dark:border-[#84b9cb]/30"
+                      : "text-[#4c6473] hover:text-[#2f5d50] hover:bg-white/60 hover:backdrop-blur-md hover:shadow-md hover:border hover:border-white/30 dark:text-[#f8f4e6] dark:hover:text-[#84b9cb] dark:hover:bg-[#4c6473]/60 dark:hover:border-[#84b9cb]/30"
+                    : activeSection === item.href.substring(1)
+                    ? "text-[#2f5d50] dark:text-[#f8f4e6]"
                     : "text-[#4c6473] hover:text-[#2f5d50] hover:bg-[#f8f4e6]/50 dark:text-[#f8f4e6] dark:hover:text-[#84b9cb] dark:hover:bg-[#4c6473]/30"
                 }`}
               >
@@ -178,17 +182,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 <a
                   href={item.href}
                   onClick={closeMenu}
-                  className="flex items-center gap-3 px-4 py-3  text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
+                  className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] hover:from-[#4c6473] hover:to-[#84b9cb] text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
                 >
                   {item.label}
                 </a>
               </li>
             ))}
-            <li className="mt-4 pt-4 border-[#4c6473]/20 dark:border-[#84b9cb]/20">
+            <li className="mt-4 pt-4 border-t border-[#4c6473]/20 dark:border-[#84b9cb]/20">
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="flex items-center gap-3 px-4 py-3  text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
+                className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] hover:from-[#4c6473] hover:to-[#84b9cb] text-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl dark:from-[#84b9cb] dark:to-[#4c6473]"
               >
                 <span className="font-medium">Contact Me</span>
               </a>
