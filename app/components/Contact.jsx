@@ -37,19 +37,11 @@ const Contact = ({ isDarkMode }) => {
   };
 
   return (
-    <div id="contact" className="w-full min-h-screen relative overflow-hidden">
-      {/* 背景装饰 */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f8f4e6] via-[#f8f4e6]/80 to-[#84b9cb]/20 dark:from-[#2f5d50]/40 dark:via-[#4c6473]/30 dark:to-[#84b9cb]/10" />
-
-      {/* 几何装饰元素 */}
-      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#84b9cb]/20 blur-xl animate-pulse" />
-      <div className="absolute top-40 right-20 w-24 h-24 rounded-full bg-[#4c6473]/15 blur-lg animate-pulse delay-1000" />
-      <div className="absolute bottom-20 left-1/4 w-40 h-40 rounded-full bg-[#2f5d50]/10 blur-2xl animate-pulse delay-500" />
-
-      <div className="relative z-10 px-6 py-20 md:px-12 lg:px-[12%]">
+    <div id="contact" className="w-full relative overflow-hidden">
+      <div className="relative z-10 px-6 md:px-12 lg:px-[12%]">
         <div className="max-w-4xl mx-auto">
           {/* 标题区域 */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-4">
             <div className="inline-block p-2 rounded-full bg-[#84b9cb]/20 mb-6">
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#4c6473] to-[#84b9cb] flex items-center justify-center">
                 <svg
@@ -75,12 +67,15 @@ const Contact = ({ isDarkMode }) => {
                 I look forward to hearing from you
               </span>
             </p>
+            <p className="text-[#4c6473]/60 dark:text-[#84b9cb]/70">
+              (I aim to respond to all messages within 24 hours.)
+            </p>
           </div>
 
           {/* 表单容器 */}
           <div className="relative">
             {/* 表单背景卡片 */}
-            <div className="absolute inset-0 bg-white/60 dark:bg-[#4c6473]/20 backdrop-blur-lg rounded-3xl shadow-2xl border border-[#84b9cb]/30" />
+            <div className="absolute inset-0 bg-white/60 dark:bg-[#4c6473]/20 backdrop-blur-lg rounded-3xl shadow-lg border border-[#84b9cb]/30" />
 
             <form onSubmit={onSubmit} className="relative p-8 md:p-12">
               {/* 输入字段容器 */}
@@ -94,7 +89,7 @@ const Contact = ({ isDarkMode }) => {
                     type="text"
                     placeholder="Enter your name"
                     required
-                    className="w-full p-4 rounded-2xl border-2 border-[#84b9cb]/30 bg-white/80 dark:bg-[#2f5d50]/30 backdrop-blur-sm
+                    className="w-full p-2 rounded-2xl border-2 border-[#84b9cb]/30 bg-white/80 dark:bg-[#2f5d50]/30 backdrop-blur-sm
                              focus:border-[#4c6473] focus:ring-4 focus:ring-[#84b9cb]/20 outline-none transition-all duration-300
                              placeholder-[#4c6473]/50 text-[#2f5d50] dark:text-[#f8f4e6] dark:placeholder-[#84b9cb]/60
                              hover:shadow-lg hover:border-[#4c6473]/50"
@@ -110,7 +105,7 @@ const Contact = ({ isDarkMode }) => {
                     type="email"
                     placeholder="your@email.com"
                     required
-                    className="w-full p-4 rounded-2xl border-2 border-[#84b9cb]/30 bg-white/80 dark:bg-[#2f5d50]/30 backdrop-blur-sm
+                    className="w-full p-2 rounded-2xl border-2 border-[#84b9cb]/30 bg-white/80 dark:bg-[#2f5d50]/30 backdrop-blur-sm
                              focus:border-[#4c6473] focus:ring-4 focus:ring-[#84b9cb]/20 outline-none transition-all duration-300
                              placeholder-[#4c6473]/50 text-[#2f5d50] dark:text-[#f8f4e6] dark:placeholder-[#84b9cb]/60
                              hover:shadow-lg hover:border-[#4c6473]/50"
@@ -118,7 +113,7 @@ const Contact = ({ isDarkMode }) => {
                 </div>
               </div>
 
-              <div className="space-y-2 mb-8">
+              <div className="space-y-2 mb-2">
                 <label className="block text-sm font-medium text-[#4c6473] dark:text-[#84b9cb]/90">
                   Your message
                 </label>
@@ -139,7 +134,7 @@ const Contact = ({ isDarkMode }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="group relative px-8 py-4 bg-gradient-to-r from-[#4c6473] to-[#2f5d50] text-white font-semibold rounded-2xl
+                  className="group relative px-4 py-2 bg-gradient-to-r from-[#4c6473] to-[#2f5d50] text-white font-semibold rounded-2xl
                            hover:from-[#2f5d50] hover:to-[#4c6473] transform hover:scale-105 hover:shadow-2xl
                            transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
                            border border-[#84b9cb]/20 hover:border-[#84b9cb]/40"
@@ -174,9 +169,9 @@ const Contact = ({ isDarkMode }) => {
               {result && (
                 <div
                   className={`mt-6 p-4 rounded-2xl text-center font-medium transition-all duration-500 ${
-                    result.includes("成功")
+                    result.includes("success")
                       ? "bg-[#84b9cb]/20 text-[#2f5d50] dark:bg-[#84b9cb]/30 dark:text-[#f8f4e6] border border-[#84b9cb]/40"
-                      : result.includes("发送中") || result.includes("正在")
+                      : result.includes("sending") || result.includes("going")
                       ? "bg-[#f8f4e6]/80 text-[#4c6473] dark:bg-[#4c6473]/20 dark:text-[#84b9cb] border border-[#84b9cb]/30"
                       : "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300 border border-red-300/40"
                   }`}
@@ -185,14 +180,6 @@ const Contact = ({ isDarkMode }) => {
                 </div>
               )}
             </form>
-          </div>
-
-          {/* 底部装饰信息 */}
-          <div className="text-center mt-12">
-            <p className="text-[#4c6473]/60 dark:text-[#84b9cb]/70">
-              I aim to respond to all messages within 24 hours.
-              <span className="inline-block ml-2">💫</span>
-            </p>
           </div>
         </div>
       </div>
