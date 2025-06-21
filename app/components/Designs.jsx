@@ -34,17 +34,12 @@ const Designs = () => {
       id="designs"
       className="relative w-full px-[8%] lg:px-[12%] py-16 lg:py-20 scroll-mt-20 overflow-hidden"
     >
-      {/* 背景装饰元素 */}
-      {/* <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-[#84b9cb]/10 to-[#f8f4e6]/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-bl from-[#2f5d50]/10 to-[#4c6473]/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-gradient-to-r from-[#f8f4e6]/15 to-[#84b9cb]/10 rounded-full blur-2xl animate-pulse delay-500"></div>
-      </div> */}
+      
 
       <div className="relative z-10">
-        {/* 标题区域 */}
+
         <div className="text-center mb-16">
-          {/* 装饰线和标签 */}
+
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#84b9cb] to-[#2f5d50]"></div>
             <span className="text-[#4c6473] dark:text-[#84b9cb] font-medium tracking-widest uppercase text-sm px-4 py-2 bg-[#f8f4e6]/30 dark:bg-[#2f5d50]/30 rounded-full border border-[#4c6473]/20 dark:border-[#84b9cb]/30 backdrop-blur-sm">

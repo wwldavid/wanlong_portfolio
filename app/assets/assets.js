@@ -116,6 +116,11 @@ export const designData = [
       "/images/logo_design/logo5.jpg",
       "/images/logo_design/logo6.jpg",
       "/images/logo_design/logo7.jpg",
+      "/images/logo_design/logo8.jpg",
+      "/images/logo_design/logo9.jpg",
+      "/images/logo_design/logo10.jpg",
+      "/images/logo_design/logo11.jpg",
+      "/images/logo_design/logo12.jpg",
     ],
   },
   {
