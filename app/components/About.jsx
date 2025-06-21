@@ -26,22 +26,18 @@ const About = ({ isDarkMode }) => {
         {/* 标题区域 */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#2f5d50] via-[#4c6473] to-[#84b9cb] dark:from-[#84b9cb] dark:via-[#e0ebaf] dark:to-[#f8f4e6] bg-clip-text text-transparent leading-tight">
-            Skills & Expertise
+            About Me
           </h2>
           <p className="text-[#4c6473]/80 dark:text-[#f8f4e6]/80 mt-4 text-lg max-w-2xl mx-auto">
             Crafting modern web experiences with passion and precision
           </p>
         </div>
 
-        {/* 主要内容区域 */}
         <div className="flex w-full flex-col lg:flex-row items-start gap-16 lg:gap-20">
-          {/* 个人照片区域 */}
           <div className="w-full lg:w-auto flex justify-center lg:justify-start">
             <div className="relative group">
-              {/* 照片光环效果 */}
               <div className="absolute -inset-4 bg-gradient-to-r from-[#84b9cb] via-[#e0ebaf] to-[#f8f4e6] rounded-3xl blur-lg opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
 
-              {/* 装饰边框 */}
               <div className="absolute -inset-2 bg-gradient-to-br from-[#2f5d50]/20 via-[#4c6473]/20 to-[#84b9cb]/20 rounded-2xl"></div>
 
               <div className="relative bg-gradient-to-br from-[#f8f4e6] to-[#e0ebaf] dark:from-[#2f5d50] dark:to-[#4c6473] p-3 rounded-2xl shadow-2xl">
@@ -52,46 +48,81 @@ const About = ({ isDarkMode }) => {
                 />
               </div>
 
-              {/* 浮动标签 */}
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium">
                 <span className="animate-pulse"> Graduating 2025</span>
               </div>
             </div>
           </div>
 
-          {/* 内容区域 */}
           <div className="flex-1 w-full">
-            {/* 介绍文字 */}
-            <div className="mb-12 p-6 bg-gradient-to-r from-[#f8f4e6]/50 via-[#e0ebaf]/30 to-transparent dark:from-[#2f5d50]/30 dark:via-[#4c6473]/20 dark:to-transparent rounded-2xl border border-[#4c6473]/20 dark:border-[#84b9cb]/20 backdrop-blur-sm">
-              <p className="text-[#4c6473] dark:text-[#f8f4e6] leading-relaxed text-lg">
-                Hi, I&apos;m{" "}
-                <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
-                  David Wanlong Wu
-                </span>
-                , a passionate web developer currently studying Web Design &
-                Development at
-                <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
-                  {" "}
-                  Southern Alberta Institute of Technology
-                </span>
-                , graduating in August 2025. I specialize in building
-                responsive, modern web applications using cutting-edge
-                technologies like
-                <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
-                  {" "}
-                  React, Next.js
-                </span>
-                , and robust databases such as
-                <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
-                  {" "}
-                  PostgreSQL
-                </span>
-                .
-              </p>
+            <div className="mb-12 p-6  dark:from-[#2f5d50]/30 dark:via-[#4c6473]/20 dark:to-transparent rounded-2xl border border-[#4c6473]/20 dark:border-[#84b9cb]/20 backdrop-blur-sm">
+              <div className="mb-12 p-6  dark:from-[#2f5d50]/30 dark:via-[#4c6473]/20 dark:to-transparent rounded-2xl border border-[#4c6473]/20 dark:border-[#84b9cb]/20 backdrop-blur-sm">
+                <p className="text-[#4c6473] dark:text-[#f8f4e6] leading-relaxed text-lg">
+                  Hi, I&apos;m{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    David Wanlong Wu
+                  </span>
+                  , a web development student at the{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    Interactive Design Department of Southern Alberta Institute
+                    of Technology (SAIT)
+                  </span>
+                  , expected to graduate in{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    August 2025
+                  </span>
+                  . Throughout my studies at SAIT, I have gained hands-on
+                  experience with a variety of design and development tools,
+                  including{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    Photoshop, Illustrator, Figma, Premiere Pro, and After
+                    Effects
+                  </span>
+                  .
+                  <br />
+                  <br />
+                  On the development side, I specialize in building modern,
+                  responsive websites using{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    HTML, CSS, Tailwind CSS, JavaScript, React, and Next.js
+                  </span>
+                  . I also have experience working with backend tools such as{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    PostgreSQL, Prisma, NextAuth.js, and Railway
+                  </span>
+                  .
+                  <br />
+                  <br />
+                  So far, I have designed and built several fully responsive web
+                  applications that demonstrate clean design, accessibility, and
+                  mobile-first principles. Currently, I am developing a website
+                  for{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    New Creation Life Ministries Church in Toronto
+                  </span>
+                  , focusing on visual storytelling and content management. In
+                  addition, I am working on a capstone project: a group-based
+                  mental health web application. In this project, I am
+                  responsible for all coding tasks, while my teammates focus on
+                  branding and user interface design.
+                  <br />
+                  <br />
+                  Through these projects, I&apos;ve developed strong skills in{" "}
+                  <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
+                    team collaboration, problem-solving, and time management
+                  </span>
+                  . I am passionate about creating meaningful digital
+                  experiences and always strive to write clean, maintainable
+                  code. I enjoy learning new technologies and applying them to
+                  real-world problems. My goal is to build inclusive, engaging,
+                  and impactful web experiences that serve both clients and
+                  users. I am eager to continue growing as a developer and to
+                  contribute to projects that make a positive difference.
+                </p>
+              </div>
             </div>
 
-            {/* 技能卡片网格 */}
-            <div className="mb-12">
+            {/* <div className="mb-12">
               <h3 className="text-2xl font-bold text-[#2f5d50] dark:text-[#84b9cb] mb-8 flex items-center gap-3">
                 <div className="w-1 h-8 bg-gradient-to-b from-[#84b9cb] to-[#e0ebaf] rounded-full"></div>
                 Core Competencies
@@ -113,10 +144,10 @@ const About = ({ isDarkMode }) => {
                           minHeight: isExpanded ? "auto" : "280px",
                         }}
                       >
-                        {/* 卡片光效 */}
+
                         <div className="absolute inset-0 bg-gradient-to-r from-[#84b9cb]/10 via-transparent to-[#e0ebaf]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                        {/* 图标容器 */}
+
                         <div className="relative z-10 mb-4">
                           <div className="w-16 h-16 bg-gradient-to-br from-[#2f5d50] to-[#4c6473] dark:from-[#84b9cb] dark:to-[#e0ebaf] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                             <Image
@@ -127,12 +158,12 @@ const About = ({ isDarkMode }) => {
                           </div>
                         </div>
 
-                        {/* 标题 */}
+
                         <h4 className="relative z-10 text-xl font-bold text-[#2f5d50] dark:text-[#f8f4e6] mb-3 group-hover:text-[#4c6473] dark:group-hover:text-[#84b9cb] transition-colors duration-300">
                           {title}
                         </h4>
 
-                        {/* 描述内容 */}
+
                         <div className="relative z-10">
                           <p
                             className={`text-[#4c6473]/80 dark:text-[#f8f4e6]/90 leading-relaxed transition-all duration-300 ${
@@ -142,13 +173,13 @@ const About = ({ isDarkMode }) => {
                             {description}
                           </p>
 
-                          {/* 渐变遮罩 */}
+
                           {!isExpanded && (
                             <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-[#f8f4e6]/90 via-[#f8f4e6]/60 to-transparent dark:from-[#2f5d50]/90 dark:via-[#2f5d50]/60 dark:to-transparent pointer-events-none"></div>
                           )}
                         </div>
 
-                        {/* 展开/收起按钮 */}
+
                         <button
                           className="relative z-20 mt-4 px-4 py-2 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] hover:from-[#4c6473] hover:to-[#84b9cb] text-white text-sm font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                           onClick={(e) => {
@@ -163,9 +194,8 @@ const About = ({ isDarkMode }) => {
                   }
                 )}
               </div>
-            </div>
+            </div> */}
 
-            {/* 开发工具区域 */}
             <div>
               <h3 className="text-2xl font-bold text-[#2f5d50] dark:text-[#84b9cb] mb-8 flex items-center gap-3">
                 <div className="w-1 h-8 bg-gradient-to-b from-[#e0ebaf] to-[#84b9cb] rounded-full"></div>
