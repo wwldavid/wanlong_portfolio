@@ -75,7 +75,7 @@ const Header = ({ isDarkMode }) => {
           {/* Contact 按钮 */}
           <a
             href="#contact"
-            className="group relative overflow-hidden px-8 py-4 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] hover:from-[#4c6473] hover:to-[#84b9cb] text-white rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center"
+            className="group relative overflow-hidden px-4 py-2 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] hover:from-[#4c6473] hover:to-[#84b9cb] text-white rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center"
           >
             <span className="relative z-10 font-medium">Contact me</span>
             <Image
@@ -90,7 +90,7 @@ const Header = ({ isDarkMode }) => {
           {/* Resume 按钮 */}
           <button
             onClick={toggleResume}
-            className="group relative overflow-hidden px-8 py-4 bg-gradient-to-r from-[#f8f4e6] to-[#f2f2b0] hover:from-[#f2f2b0] hover:to-[#e0ebaf] text-[#2f5d50] border-2 border-[#e0ebaf] hover:border-[#4c6473] rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center dark:bg-gradient-to-r dark:from-[#2f5d50] dark:to-[#4c6473] dark:text-[#f8f4e6] dark:border-[#84b9cb] dark:hover:from-[#4c6473] dark:hover:to-[#84b9cb]"
+            className="group relative overflow-hidden px-4 py-2 bg-gradient-to-r from-[#f8f4e6] to-[#f2f2b0] hover:from-[#f2f2b0] hover:to-[#e0ebaf] text-[#2f5d50] border-2 border-[#e0ebaf] hover:border-[#4c6473] rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center dark:bg-gradient-to-r dark:from-[#2f5d50] dark:to-[#4c6473] dark:text-[#f8f4e6] dark:border-[#84b9cb] dark:hover:from-[#4c6473] dark:hover:to-[#84b9cb]"
           >
             <span className="relative z-10 font-medium">
               {showResume ? "Close resume" : "My resume"}

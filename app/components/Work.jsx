@@ -117,7 +117,7 @@ const Work = ({ isDarkMode }) => {
             href="https://vercel.com/wanlong-wus-projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-[#f8f4e6] via-[#84b9cb]/20 to-[#f8f4e6] dark:from-[#2f5d50] dark:via-[#4c6473]/50 dark:to-[#2f5d50] hover:from-[#84b9cb] hover:to-[#4c6473] dark:hover:from-[#84b9cb] dark:hover:to-[#f8f4e6] rounded-full border-2 border-[#4c6473]/30 dark:border-[#84b9cb]/30 hover:border-[#f8f4e6] dark:hover:border-[#2f5d50] backdrop-blur-sm shadow-lg hover:shadow-2xl hover:shadow-[#84b9cb]/25 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1"
+            className="group inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[#f8f4e6] via-[#84b9cb]/20 to-[#f8f4e6] dark:from-[#2f5d50] dark:via-[#4c6473]/50 dark:to-[#2f5d50] hover:from-[#84b9cb] hover:to-[#4c6473] dark:hover:from-[#84b9cb] dark:hover:to-[#f8f4e6] rounded-full border-2 border-[#4c6473]/30 dark:border-[#84b9cb]/30 hover:border-[#f8f4e6] dark:hover:border-[#2f5d50] backdrop-blur-sm shadow-lg hover:shadow-2xl hover:shadow-[#84b9cb]/25 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1"
           >
             {/* 按钮文字 */}
             <span className="text-lg font-semibold text-[#2f5d50] dark:text-[#f8f4e6] group-hover:text-[#f8f4e6] dark:group-hover:text-[#2f5d50] transition-colors duration-300">
