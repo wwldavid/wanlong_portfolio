@@ -20,15 +20,6 @@ const Work = ({ isDarkMode }) => {
       <div className="relative z-10">
         {/* 标题区域 */}
         <div className="text-center mb-16">
-          {/* 装饰线和标签 */}
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-20 h-px bg-gradient-to-r from-transparent via-[#84b9cb] to-[#2f5d50]"></div>
-            <span className="text-[#4c6473] dark:text-[#84b9cb] font-medium tracking-widest uppercase text-sm px-5 py-2 bg-gradient-to-r from-[#f8f4e6]/30 to-[#84b9cb]/20 dark:from-[#2f5d50]/30 dark:to-[#4c6473]/20 rounded-full border border-[#4c6473]/20 dark:border-[#84b9cb]/30 backdrop-blur-sm">
-              Portfolio Showcase
-            </span>
-            <div className="w-20 h-px bg-gradient-to-l from-transparent via-[#84b9cb] to-[#2f5d50]"></div>
-          </div>
-
           {/* 主标题 */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-[#2f5d50] via-[#4c6473] to-[#84b9cb] dark:from-[#84b9cb] dark:via-[#f8f4e6] dark:to-[#2f5d50] bg-clip-text text-transparent leading-tight">

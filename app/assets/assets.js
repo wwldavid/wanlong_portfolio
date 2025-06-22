@@ -138,6 +138,7 @@ export const designData = [
     bgImage: "/images/design2.jpg",
     title: "Creative drawing",
     description: "Assembly of ART...",
+
     carouselImages: [
       "/images/brand_design/dream1.jpg",
       "/images/brand_design/dream2.jpg",
@@ -181,4 +182,97 @@ export const toolsData = [
   assets.mongodb,
   assets.python,
   assets.git,
+];
+
+export const processData = [
+  {
+    type: "image",
+    src: "/process/process1.jpg",
+    alt: "process1",
+  },
+  {
+    type: "image",
+    src: "/process/process2.jpg",
+    alt: "process2",
+  },
+  {
+    type: "image",
+    src: "/process/process3.jpg",
+    alt: "proces3",
+  },
+  {
+    type: "image",
+    src: "/process/process4.jpg",
+    alt: "process4",
+  },
+  {
+    type: "image",
+    src: "/process/step1.jpg",
+    alt: "Step1",
+  },
+  {
+    type: "image",
+    src: "/process/step2.jpg",
+    alt: "Step2",
+  },
+  {
+    type: "image",
+    src: "/process/step3.jpg",
+    alt: "Step3",
+  },
+  {
+    type: "image",
+    src: "/process/step4.jpg",
+    alt: "Step4",
+  },
+  {
+    type: "image",
+    src: "/process/step5.jpg",
+    alt: "Step5",
+  },
+  {
+    type: "image",
+    src: "/process/step6.jpg",
+    alt: "Step6",
+  },
+  {
+    type: "image",
+    src: "/process/step7.jpg",
+    alt: "Step7",
+  },
+  {
+    type: "image",
+    src: "/process/step8.jpg",
+    alt: "Step8",
+  },
+  {
+    type: "image",
+    src: "/process/step9.jpg",
+    alt: "Step9",
+  },
+  {
+    type: "image",
+    src: "/process/step10.jpg",
+    alt: "Step10",
+  },
+  {
+    type: "image",
+    src: "/process/step11.jpg",
+    alt: "Step11",
+  },
+  {
+    type: "image",
+    src: "/process/step12.jpg",
+    alt: "Step12",
+  },
+  {
+    type: "image",
+    src: "/process/step13.jpg",
+    alt: "Step13",
+  },
+  {
+    type: "image",
+    src: "/process/step14.jpg",
+    alt: "Step14",
+  },
 ];
