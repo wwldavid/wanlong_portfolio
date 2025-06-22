@@ -98,11 +98,24 @@ export default function ResumeModal({ onClose }) {
 
       <h2 className="mt-4 font-semibold">Hobbies</h2>
       <p>Running, swimming, reading</p>
+
       <button
         onClick={onClose}
-        className="absolute bottom-3 right-4 px-2 py-1 text-base border rounded-full border-gray-500 flex items-center gap-3 bg-[#f8f4e6] text-black dark:bg-gray-200 dark:text-black"
+        className="absolute bottom-3 right-4 group bg-gradient-to-r from-[#4c6473] to-[#2f5d50] hover:from-[#84b9cb] hover:to-[#4c6473] text-white p-1 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
       >
-        × Close Resume
+        <svg
+          className="w-5 h-5 group-hover:rotate-90 transition-transform duration-300"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
       </button>
     </div>
   );
