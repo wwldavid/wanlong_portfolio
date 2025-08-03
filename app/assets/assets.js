@@ -78,28 +78,40 @@ export const assets = {
 
 export const workData = [
   {
+    title: "Toronto NCLM church website ",
+    description:
+      "This is a website I am currently working on independently. On this website, I have developed an activity creating and applying function and a sermon player for streaming the church’s video and audio materials. I use two layers of external services for data storage: Cloudflare R2 and Supabase. Cloudflare R2 is used to store .mp3 and .mp4 files, while Supabase is used to manage database tables and file link information.",
+    bgImage: "/work-4.png",
+    techStack: "Next.js, Prisma, Tailwind CSS, Cloudflare R2, Supabase.",
+    createdAt: "May, 2025 --- August, 2025",
+    link: "https://newcreationlife.vercel.app/",
+  },
+  {
     title: "Mental Health App",
-    description: "Full Stack Front End App",
+    description:
+      "Capstone project --- This is a mobile application with comprehensive features to promote mental health. I am currently developing it with my team. I am solely responsible for the coding, while my teammates handle UI, UX, and graphic design.",
     bgImage: "/work-2.png",
+    techStack:
+      "The tech stack includes Next.js, Prisma, Tailwind CSS, and Railway for database management. I also integrate external services such as OpenAi, Daily, Twilio, and NextAuth.",
+    createdAt: "May, 2025 --- August, 2025",
     link: "https://mental-health-seven-lake.vercel.app/",
   },
   {
     title: "Invoice Notebook",
     description: "Full Stack Frond End App",
     bgImage: "/work-1.png",
+    techStack: "Next.js, Tailwind CSS, drizzle-orm, stripe",
+    createdAt: "May, 2025",
+
     link: "https://wanlong-full-stack-invoice.vercel.app/",
   },
   {
     title: "Hamburger Home",
     description: "React App",
     bgImage: "/work-3.png",
+    techStack: "React",
+    createdAt: "March, 2025 ",
     link: "https://buy-hamburger-home.vercel.app/",
-  },
-  {
-    title: "Toronto Ministries",
-    description: "Church Web Design",
-    bgImage: "/work-4.png",
-    link: "https://newcreationlife.vercel.app/",
   },
 ];
 

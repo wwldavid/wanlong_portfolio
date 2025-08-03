@@ -29,8 +29,8 @@ const Work = ({ isDarkMode }) => {
 
           {/* 描述文字 */}
           <div className="max-w-4xl mx-auto">
-            <div className="relative bg-gradient-to-r from-[#f8f4e6]/20 via-[#84b9cb]/10 to-[#f8f4e6]/20 dark:from-[#2f5d50]/20 dark:via-[#4c6473]/10 dark:to-[#2f5d50]/20 rounded-2xl p-8 border border-[#4c6473]/20 dark:border-[#84b9cb]/20 backdrop-blur-sm">
-              <p className="text-[#4c6473]/90 dark:text-[#f8f4e6]/90 text-lg leading-relaxed px-8">
+            <div className="relative bg-gradient-to-r from-[#f8f4e6]/20 via-[#84b9cb]/10 to-[#f8f4e6]/20 dark:from-[#2f5d50]/20 dark:via-[#4c6473]/10 dark:to-[#2f5d50]/20 rounded-2xl p-4 border border-[#4c6473]/20 dark:border-[#84b9cb]/20 ">
+              <p className="text-[#4c6473]/90 dark:text-[#f8f4e6]/90 text-lg leading-relaxed">
                 Welcome to my web development collections! Here you will find my{" "}
                 <span className="font-semibold text-[#2f5d50] dark:text-[#84b9cb]">
                   mental health app
@@ -47,59 +47,65 @@ const Work = ({ isDarkMode }) => {
           </div>
         </div>
 
-        {/* 项目展示网格 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16">
-          {workData.map(({ title, description, bgImage, link }, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer transition-all duration-700 hover:-translate-y-4 hover:shadow-2xl hover:shadow-[#84b9cb]/25"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              {/* 背景图片 */}
+        {/* 项目展示列表 */}
+        <div className="flex flex-col p-6 gap-8">
+          {workData.map(
+            (
+              { title, description, bgImage, techStack, createdAt, link },
+              index
+            ) => (
               <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${bgImage})` }}
-              />
-
-              {/* 悬停装饰效果 */}
-              {hoveredIndex === index && (
-                <>
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#84b9cb]/20 via-transparent to-[#f8f4e6]/15 animate-pulse" />
-                  <div className="absolute top-6 right-6 w-4 h-4 bg-[#84b9cb] rounded-full animate-ping" />
-                  <div className="absolute top-8 right-8 w-2 h-2 bg-[#f8f4e6] rounded-full" />
-
-                  {/* 边框光效 */}
-                  <div className="absolute inset-0 rounded-3xl border-2 border-[#84b9cb]/50 animate-pulse" />
-                </>
-              )}
-
-              {/* 项目链接按钮 */}
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 z-10"
+                key={index}
+                className="grid grid-cols-1 md:grid-cols-2 gap-4 transition-transform duration-700 hover:-translate-y-2"
               >
-                {/* 内容卡片 */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-1 group-hover:translate-y-0 transition-all duration-500">
-                  {/* 项目信息卡片 */}
-                  <div className="bg-[#80989b]/60 backdrop-blur-md rounded-2xl px-4 py-2 border border-[#4c6473]/20 dark:border-[#84b9cb]/30 shadow-xl transform translate-y-1 group-hover:translate-y-0 transition-all duration-500">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-[#2f5d50] dark:text-[#f8f4e6] mb-2 group-hover:text-[#4c6473] dark:group-hover:text-[#165e83] transition-colors duration-300">
-                          {title}
-                        </h3>
-                        <p className="text-[#4c6473] dark:text-[#f8f4e6]/90 text-sm leading-relaxed line-clamp-2">
-                          {description}
-                        </p>
-                      </div>
-                    </div>
+                {/* 左侧图片 */}
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="relative w-full max-w-[350px] md:max-w-[450px] lg:max-w-[500px] aspect-[16/9]">
+                    <Image
+                      src={bgImage}
+                      alt={title}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="object-cover"
+                    />
                   </div>
+                </a>
+
+                {/* 右侧内容 */}
+                <div className=" p-2 flex flex-col justify-between overflow-y-auto">
+                  <div>
+                    <h3 className="text-2xl font-bold text-[#2f5d50] dark:text-[#f8f4e6] mb-4 overflow-y-auto">
+                      {title}
+                    </h3>
+                    <p className="text-[#4c6473] dark:text-[#f8f4e6]/90 text-sm mb-2">
+                      {description}
+                    </p>
+                    <p className="text-sm mb-2 text-[#4c6473] dark:text-[#f8f4e6]/90">
+                      <span className="font-semibold">Tech Stack:</span>{" "}
+                      {techStack}
+                    </p>
+                    <p className="text-sm mb-4 text-[#4c6473] dark:text-[#f8f4e6]/90">
+                      <span className="font-semibold">Created:</span>{" "}
+                      {createdAt}
+                    </p>
+                  </div>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-auto inline-block font-semibold text-[#84b9cb] dark:text-[#e0ebaf] hover:underline"
+                  >
+                    URL:{link}
+                  </a>
                 </div>
-              </a>
-            </div>
-          ))}
+              </div>
+            )
+          )}
         </div>
 
         {/* Show More 按钮 */}

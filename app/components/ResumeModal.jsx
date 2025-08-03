@@ -6,12 +6,12 @@ export default function ResumeModal({ onClose }) {
       <p>
         <strong>Wanlong Wu</strong>
         <br />
-        Web Design & Development Specialist
+        Web Designer & React Web Developer
         <br />
-        4115 67st NW, Calgary, AB, Canada
+        4115 67 St NW, Calgary, AB, Canada
         <br />
-        <a href="mailto:Wanlong.Wu@edu.sait.ca">Wanlong.Wu@edu.sait.ca</a> |
-        davidwu.web@gmail.com ｜403-888-3609
+        <a href="mailto:davidwu.web@gmail.com">davidwu.web@gmail.com</a> ｜
+        403-888-3609
         <br />
         LinkedIn:{" "}
         <a
@@ -29,15 +29,15 @@ export default function ResumeModal({ onClose }) {
         </li>
         <li>
           Experienced in modern web development tools and programming languages
-          like JavaScript, React, and TypeScript.
+          like JavaScript, React, Next.js, Tailwind CSS, and TypeScript.
         </li>
         <li>
-          Skilled in preparing reports, manuals and other documentation on
-          software status and maintenance.
+          Skilled in preparing reports, manuals, and other documentation on the
+          status, operation and maintenance of software.
         </li>
         <li>
           Excellent problem-solving skills, adaptability, and collaborative
-          teamwork.
+          teamwork in delivering high-quality digital solutions.
         </li>
       </ul>
 
@@ -53,27 +53,105 @@ export default function ResumeModal({ onClose }) {
         <li>Web Application Development</li>
         <li>Web Security Fundamentals</li>
       </ul>
+      <p className="mt-2 font-semibold">Key Skills from Education:</p>
+      <ul className="list-disc list-inside">
+        <li>Developed wireframes, storyboards, and interactive designs.</li>
+        <li>
+          Built dynamic, responsive websites with component-based frameworks.
+        </li>
+        <li>
+          Integrated user-focused design principles to refine and optimize
+          digital products.
+        </li>
+      </ul>
 
       <h2 className="mt-4 font-semibold">Project Experience</h2>
-      <ul className="list-disc list-inside">
+      <ul className="space-y-6">
         <li>
-          <strong>Yonghai’s Oil-Painting Gallery Website</strong>
-          <br />
-          Built with React, Next.js, Tailwind CSS. <br />
+          <p className="font-semibold">
+            Capstone Project: Mental Health Mobile App —{" "}
+            <span className="font-normal">
+              Next.js, Prisma, Tailwind CSS, Railway, OpenAI, Twilio, Daily,
+              NextAuth
+            </span>
+          </p>
+          <p>
+            Led full-stack development of a mobile-focused wellness app
+            promoting mental well-being. Solely responsible for the coding;
+            teammates focused on UI/UX and branding. Integrated AI chat support
+            (OpenAI), secure video chat (Daily), SMS alerts (Twilio), and user
+            authentication (NextAuth). Used Prisma for database ORM and hosted
+            the PostgreSQL database on Railway.
+          </p>
+          <a
+            href="https://mental-health-seven-lake.vercel.app/welcome"
+            className="underline text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </li>
+
+        <li>
+          <p className="font-semibold">
+            Toronto NCLM Church Website —{" "}
+            <span className="font-normal">
+              Next.js, Tailwind CSS, Supabase, Cloudflare R2
+            </span>
+          </p>
+          <p>
+            Independently developed a dynamic church website. Implemented
+            features including an event creation system and a custom sermon
+            media player supporting both audio and video streaming. Leveraged
+            Supabase for structured database management and file links, and used
+            Cloudflare R2 to store large media files (.mp3, .mp4).
+          </p>
+          <a
+            href="https://newcreationlife.vercel.app/"
+            className="underline text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </li>
+
+        <li>
+          <p className="font-semibold">
+            Yonghai’s Oil-Painting Gallery Website —{" "}
+            <span className="font-normal">HTML, CSS, JavaScript</span>
+          </p>
+          <p>
+            Built a static promotional website for a family-run oil painting
+            business. Practiced foundational JavaScript interactivity and CSS
+            layout techniques to create an elegant gallery interface.
+          </p>
           <a
             href="https://wwldavid.github.io/Yonghai-gallery/"
             className="underline text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View project
           </a>
         </li>
         <li>
-          <strong>Personal Portfolio Website</strong>
-          <br />
-          Responsive design using modern frameworks and CSS. <br />
+          <p className="font-semibold">
+            Personal Portfolio Website —{" "}
+            <span className="font-normal">Next.js, Tailwind CSS</span>
+          </p>
+          <p>
+            Designed and developed a responsive personal portfolio to showcase
+            web development skills. Emphasized modern layout techniques,
+            optimized accessibility, and clean UI using Tailwind utility
+            classes.
+          </p>
           <a
-            href="https://wwldavid.github.io/personal_portfolio_responsive/"
+            href="https://wanlong-portfolio.vercel.app/"
             className="underline text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View project
           </a>
@@ -83,17 +161,30 @@ export default function ResumeModal({ onClose }) {
       <h2 className="mt-4 font-semibold">Skills</h2>
       <ul className="list-disc list-inside">
         <li>
-          Languages & Frameworks: JavaScript, Python, React, TypeScript,
-          Next.js, D3.js, Tailwind CSS
+          <strong>Programming & Development:</strong> JavaScript, React,
+          Next.js, Tailwind CSS
         </li>
-        <li>Tools: Photoshop, Illustrator, Figma, Git, Excel</li>
-        <li>Soft Skills: Communication, multitasking, teamwork</li>
+        <li>
+          <strong>Code Mastery:</strong> Efficient at writing, modifying,
+          integrating, and testing code
+        </li>
+        <li>
+          <strong>Design Tools:</strong> Photoshop, Illustrator, Figma
+        </li>
+        <li>
+          <strong>Other Tools:</strong> Git, MS Excel, MS Word
+        </li>
+        <li>
+          <strong>Soft Skills:</strong> Communication, multitasking under
+          pressure, teamwork
+        </li>
       </ul>
 
       <h2 className="mt-4 font-semibold">Volunteer Experience</h2>
       <p>
-        Equipment organization, reception, and distribution of items at Foothill
-        United Church (Bowness Church)
+        Assisted with equipment organization, reception, and distribution of
+        items; responsible for maintenance and cleaning tasks at Foothill United
+        Church (Bowness).
       </p>
 
       <h2 className="mt-4 font-semibold">Hobbies</h2>
