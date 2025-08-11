@@ -42,7 +42,7 @@ const Contact = ({ isDarkMode }) => {
         <div className="max-w-7xl mx-auto">
           {/* 标题区域 */}
           <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#4c6473] via-[#2f5d50] to-[#84b9cb] bg-clip-text text-transparent mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#4c6473] via-[#2f5d50] to-[#84b9cb] bg-clip-text text-transparent mb-4">
               Contact Me
             </h2>
 

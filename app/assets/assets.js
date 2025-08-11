@@ -16,10 +16,10 @@ import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import profile_img from "./profile-img.png";
-import open_icon from "./open_icon.png";
+
 import more_icon from "./more_icon.png";
 import contact_icon from "./contact_icon.png";
-import open_icon_dark from "./open_icon_dark.png";
+
 import more_icon_dark from "./more_icon_dark.png";
 import contact_icon_dark from "./contact_icon_dark.png";
 
@@ -59,8 +59,6 @@ export const assets = {
   mail_icon,
   mail_icon_dark,
   profile_img,
-  open_icon,
-  open_icon_dark,
 
   moon_icon,
   sun_icon,

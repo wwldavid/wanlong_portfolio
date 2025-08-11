@@ -21,7 +21,7 @@ const Work = ({ isDarkMode }) => {
         {/* 标题区域 */}
         <div className="text-center mb-16">
           {/* 主标题 */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-[#2f5d50] via-[#4c6473] to-[#84b9cb] dark:from-[#84b9cb] dark:via-[#f8f4e6] dark:to-[#2f5d50] bg-clip-text text-transparent leading-tight">
               My Latest Work
             </span>

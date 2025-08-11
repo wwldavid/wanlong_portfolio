@@ -78,11 +78,7 @@ const Header = ({ isDarkMode }) => {
             className="group relative overflow-hidden px-4 py-2 bg-gradient-to-r from-[#2f5d50] to-[#4c6473] hover:from-[#4c6473] hover:to-[#84b9cb] text-white rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center"
           >
             <span className="relative z-10 font-medium">Contact me</span>
-            <Image
-              src={isDarkMode ? assets.contact_icon_dark : assets.contact_icon}
-              alt="contact icon"
-              className="w-6 h-6 relative z-10 group-hover:translate-x-1 transition-transform duration-300"
-            />
+
             {/* 按钮光效 */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
           </a>
@@ -90,16 +86,12 @@ const Header = ({ isDarkMode }) => {
           {/* Resume 按钮 */}
           <button
             onClick={toggleResume}
-            className="group relative overflow-hidden px-4 py-2 bg-gradient-to-r from-[#f8f4e6] to-[#f2f2b0] hover:from-[#f2f2b0] hover:to-[#e0ebaf] text-[#2f5d50] border-2 border-[#e0ebaf] hover:border-[#4c6473] rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center dark:bg-gradient-to-r dark:from-[#2f5d50] dark:to-[#4c6473] dark:text-[#f8f4e6] dark:border-[#84b9cb] dark:hover:from-[#4c6473] dark:hover:to-[#84b9cb]"
+            className="group relative overflow-hidden px-3 py-2 bg-gradient-to-r from-[#f8f4e6] to-[#f2f2b0] hover:from-[#f2f2b0] hover:to-[#e0ebaf] text-[#2f5d50] border-2 border-[#e0ebaf] hover:border-[#4c6473] rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[160px] justify-center dark:bg-gradient-to-r dark:from-[#2f5d50] dark:to-[#4c6473] dark:text-[#f8f4e6] dark:border-[#84b9cb] dark:hover:from-[#4c6473] dark:hover:to-[#84b9cb]"
           >
             <span className="relative z-10 font-medium">
               {showResume ? "Close resume" : "My resume"}
             </span>
-            <Image
-              src={isDarkMode ? assets.open_icon_dark : assets.open_icon}
-              alt="resume icon"
-              className="w-6 h-6 relative z-10 group-hover:rotate-180 transition-transform duration-300"
-            />
+
             {/* 按钮光效 */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
           </button>
