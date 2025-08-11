@@ -6,6 +6,7 @@ import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
 import vscode from "./vscode.png";
+import react from "./react.png";
 import nextjs from "./nextjs.png";
 import python from "./python.png";
 import git from "./git.png";
@@ -49,6 +50,7 @@ export const assets = {
   project_icon,
   project_icon_dark,
   vscode,
+  react,
   nextjs,
   python,
   git,
@@ -110,6 +112,16 @@ export const workData = [
     techStack: "React",
     createdAt: "March, 2025 ",
     link: "https://buy-hamburger-home.vercel.app/",
+  },
+  {
+    title: "NextForum — Currently Under Development",
+    description:
+      "This is a new forum project I am planning to use Next.js 15, NextUI (HeroUI), Tailwind CSS,    Auth.js GitHub, Prisma with SQLite, deployed using Node and Nginx, and Docker deployment.",
+    bgImage: "/work-5.jpg",
+    techStack:
+      " Next.js , NextUI (HeroUI), Tailwind CSS,  Auth.js (GitHub and Gitee), Prisma, Vercel. ",
+    createdAt: "August, 2025 -- now",
+    link: "https://nextforum-omega.vercel.app/",
   },
 ];
 
@@ -188,6 +200,7 @@ export const infoList = [
 
 export const toolsData = [
   assets.vscode,
+  assets.react,
   assets.nextjs,
   assets.mongodb,
   assets.python,
